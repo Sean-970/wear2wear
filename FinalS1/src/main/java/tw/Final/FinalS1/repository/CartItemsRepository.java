@@ -11,7 +11,7 @@ import tw.Final.FinalS1.model.CartModel;
 @Repository
 public interface CartItemsRepository extends JpaRepository<CartItemsModel, Integer> {
 
-	// 新增此方法來根據 cartId 刪除 CartItems
+	//新增此方法來根據 cartId 刪除 CartItemss
 	void deleteByCartId(Long cartId);
 
 	List<CartItemsModel> findByCartId(Long cartId);
